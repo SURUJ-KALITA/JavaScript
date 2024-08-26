@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>dissappear circle</title>
+    </head>
+<style>
+     #first-sec{
+    background-color: aqua;
+         width:100px;
+         height:100px;
+         border-radius: 50%;
+         float:left;
+    
+    
+    }
+    
+    #sec-sec{
+        background-color: chartreuse;
+        width:100px;
+        height:100px;
+        border-radius: 50%;
+        float:left;
+        margin-left: 30px;
+        
+    }
+    
+    #third-sec{
+        background-color: darkorange;
+        width:100px;
+        height:100px;
+        border-radius: 50%;
+        float:left;
+        margin-left:30px;
+    }
+    
+    </style>
+   
+    
+    
+  <body>  
+    
+    
+  <div id = "first-sec"></div>  
+  <div id = "sec-sec"></div>  
+   <div id = "third-sec"></div> 
+  <script>
+      document.getElementById("first-sec").onclick = function(){
+          document.getElementById("first-sec").style.display = "none";
+         }
+      document.getElementById("sec-sec").onclick = function(){
+          document.getElementById("sec-sec").style.display = "none";
+      }
+      
+      document.getElementById("third-sec").onclick = function(){
+          document.getElementById("third-sec").style.display = "none";
+      }
+      
+      </script>  
+    
+    </body>
+
+</html>

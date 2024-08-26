@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Objects Model</title>
+</head>
+<body id="body">
+    <h1>Create List Items</h1>
+    
+    <!-- <ul id="element" data="valid">
+        <li class="List-item">First Element</li>
+        <li class="List-item">Second Elements</li>
+        <li class="List-item">Third Elements</li>
+    </ul>
+
+    <div id="firstDiv" class="allDivs"> First Div </div>
+    <script>
+        // const allDivs = document.querySelectorAll(".allDivs")
+        // const allDivs = document.getElementsByClassName("allDivs")
+        // console.log(allDivs)
+    </script>
+    <div class="allDivs"> Second Div</div>
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table> -->
+    <button id="ClickBtn">Click Me !</button>
+    <script>
+        //Root Node as well as Element Node
+        // console.log(document.documentElement)
+        // console.log(document.body)
+        // console.log(document.head)
+        
+        //Childrens it will only show output tags not comments oit prevents unnecessary tags
+        // console.log(document.body.childNodes)
+        // console.log(document.body.children) 
+        // console.log(document.body.children)  // dnt use it as an array
+        // for(node of document.body.children){
+        //     console.log(node)
+        // }
+        // console.log(document.body.firstElementChild)
+        // console.log(document.body.lastElementChild)
+        
+        // const childrenOfBody = Array.from(document.body.children)
+        // console.log(childrenOfBody)
+
+        //Siblings
+    //     const ulTag = document.body.children[0]
+    //     const firstLi = ulTag.children[0]
+    //     const secondLi = ulTag.children[1]
+
+    //     console.log(secondLi.previousElementSibling.textContent)
+
+
+
+    //Table DOM Manipulation
+    //const tableTag = document.body.children[1]
+    // console.log(tableTag.tBodies[0].rows[0].cells[1].textContent)
+    //console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color:blue;")        
+
+
+    //ID search
+    //console.log(element.style.background = "red")
+
+
+    // const ulTag = document.getElementById("element")
+    // ulTag.style.backgroundColor = "Blue"        
+    // console.log()
+
+    // listItem = document.getElementsByClassName("List-item")
+    // //console.log(listItem)
+    // console.log(document.getElemensByTagName("table"))
+
+    // const listItem = document.querySelectorAll('.List-item')        
+    // console.log(listItem[0].textContent) //output First Element
+    //console.log(allDivs)
+
+
+    //Attributes
+    // console.log(element.getAttribute('data'))
+    // console.log(element.getAttribute('order-placed', 'pending'))  
+    // console.log(element.hasAttribute('order-placed')) 
+    // console.log(element.removeAttribute('order-placed'))  
+    
+    //Creating and Removing the node Elements
+    // const newDiv = document.createElement("div") 
+    // const newText = document.createTextNode("Hello Suruj")
+    // newDiv.textContent = "Namaste World"
+    // newDiv.appendChild(newText)
+    // body.append(newDiv)        
+    //body.prepend(newDiv)
+    //body.before(newDiv)
+    //body.after(newDiv)
+    //firstDiv.replaceWith(newDiv)
+    //firstDiv.remove()
+
+
+
+
+
+    //Events
+
+    function callMe(event){
+        console.log(event.type)
+        console.log(event.currentTarget)
+        console.log(event.clientY) // cursor related windows
+        console.log(event.clientX)
+        alert("Thanks for Watching")
+    }
+
+
+
+    // function callMe(){
+    //     console.log(This)
+    //     alert("Thanks for Watching")
+    // }
+    // ClickBtn.onclick = callMe
+
+    // ClickBtn.addEventListener('click', function(){
+    //     alert("Thanks")
+    // })
+    ClickBtn.addEventListener('click', callMe)
+   
+
+    // if you write attributes its get replaced
+    </script>
+</body>
+</html>

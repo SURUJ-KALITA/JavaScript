@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marque><h1>WELCOME TO SURUJ RESTAURANT</h1></marque>
+   
+
+    <!-- <script src="maggie.js"></script> -->
+    <!-- <script src="sandwich.js"></script> -->
+
+
+    <!-- The console.log() is a function in JavaScript that is used to print any
+    kind of variables defined before in it or to just print any message that needs to be displayed to the user. -->
+
+<!-- sandwich part -->
+    <script>
+        let bread1 = prompt("Which bread would you like to have : -- ");
+        let veggies1 = prompt("Which are your favourite veggies");
+        let sauce1 = prompt("Which sauce would you like to have: -- ");
+
+        function makeSandwich(bread, veggies , sauce){
+            let sandwich = bread + " bread " + veggies + " " + sauce + " sandwich is ready ";
+            return sandwich;
+        }
+
+        let vegsandwich = makeSandwich(bread1, veggies1 , sauce1);
+        console.log(vegsandwich);
+    </script>
+
+<!-- maggie part -->
+<script>
+
+    function cookmaggi(maggi , water , masala){
+    console.log("You Maggie will be ready in "
+    + maggi * 2
+    + " minutes "
+    + " and Ingredients used are :- "
+    + maggi + " Maggi "
+    + water + " cup of waters "
+    + " using " + masala + " pan ")
+    }
+
+    cookmaggi(4 , 8 , 4);
+
+</script>
+
+</body>
+
+</html>

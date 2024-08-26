@@ -1,0 +1,39 @@
+According to Stack-Overflow javascript is the most popular language .
+Moreover its all the most hated and lovable language .
+everything in this world whether it can be rocket , submarines and even submarines , everything has javascript in it . 
+
+
+What is javascript ?
+
+It is a high-level , often just-in-time compiled and multi-paradigm .
+Ihas curly bracket syntax , dynamic typing , prototype-based-object-orientation. and first-class functions.
+
+Father of Javascript: Brenden Eich . evolution - MO (MOKA) - LS (LIVE-SCRIPT)- JS (JAVASCRIPT)
+
+Diffrence between JAVA and Jvascript 
+
+java is a compile type language i.e source code -> compile -> Machine Code -> Output
+
+javascript is a interpreter language i.e source code -> interpreter -> output 
+
+Features of Javascript 
+
+!.Object based language .
+2.Scripting language .
+3.Polymorphism .
+4.Inheritance .
+
+Why it is Popular ?
+
+1.Easy to learn
+2.Standardized by ECMA International
+3.Biggest Community on Stack-Overflow
+4.Can be used in both FrontEnd And Backend
+5.Good Performance
+6.Lots of Framworks
+7.Build Desktop Apps(Windows/linux)
+
+Use code-editor vs-code
+
+Node.js is an open-source and cross-platform runtime environment built on Chrome’s V8 JavaScript engine for executing JavaScript code outside of a browser.
+

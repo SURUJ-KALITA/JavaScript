@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>javascript</title></head>
+<body>
+   
+    
+    <button id = "hello">Say Hi !</button>
+   <p> <input type = "text" id = "input">
+    <button id = "textchanger">Change the text</button></p> 
+    <p><input type = "text" id = "cod">
+    <button id = "sec">CHANGE THE SENTENCE DOWN BELOW</button>
+    </p>
+    <P id = "rand">This is Some text</P>
+    
+    <script type="text/javascript">
+    
+    document.getElementById("hello").onclick = function(){
+        alert("Hi User !");
+    }
+    
+    document.getElementById("textchanger").onclick = function(){
+        var textEntered = "";
+        textEntered = document.getElementById("input").value;
+        alert("Hello" + textEntered);
+    }
+   document.getElementById("sec").onclick = function(){
+       var textEnterd = "";
+       textEntered = document.getElementById("cod").value;
+       document.getElementById("rand").innerHTML = textEntered;
+   }
+    </script>
+    
+    
+    </body>
+
+
+
+
+
+</html>

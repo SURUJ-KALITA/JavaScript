@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Style</title>
+    </head>
+<body>
+    
+    <p id = "color">Javascript is love....</p>
+    <button id = "size">Change the size</button>
+    <p id = "font">Javascript makes the website....</p>
+    <button id = "pixel">Change the pixel</button>
+    <p id = "text">This is some text</p>
+    <button id = "dissapear">Make it Dissappear</button>
+    <script>
+    document.getElementById("size").onclick = function(){
+        document.getElementById("color").style.color = "red";
+        
+    }
+    document.getElementById("pixel").onclick = function(){
+        document.getElementById("font").innerHTML =  document.getElementById("font").innerHTML + " more interactive" ;
+    }
+    document.getElementById("dissapear").onclick = function(){
+        document.getElementById("text").style.display = "none";
+    }
+    
+    </script>
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

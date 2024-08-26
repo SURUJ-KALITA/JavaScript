@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Respond to a click</title>
+    </head>
+<body>
+    
+    <p id="top">Hello World</p>
+    <button id="click">Change text</button>
+    <p id ="secpara">Javascript is.......</p>
+    <button id = "secbutton">Append text</button>
+    <p id = "empty"></p>
+    <button id = "create">Create</button>
+    <script type = "text/javascript">
+    document.getElementById("click").onclick = function() {
+        document.getElementById("top").innerHTML = "Hello Suruj";
+        
+    }
+    document.getElementById("secbutton").onclick = function(){
+        document.getElementById("secpara").innerHTML =document.getElementById("secpara").innerHTML +" I think its awesome" ;
+    }
+    document.getElementById("create").onclick = function(){
+        document.getElementById("empty").innerHTML = " <h1>Hi There !</h1>";
+    }
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+
+</html>

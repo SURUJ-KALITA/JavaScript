@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let lecture = 10;
+        // let section = 3;
+        // let title = 'Javascript';
+
+        // //Its not a efficient method to declare objects
+        // const course = {
+        //     lecture: 10,
+        //     section: 3,
+        //     title: 'Javascript',
+        //     notes: {
+        //         introduction: "Welcome to Js Course"
+        //     },
+        //     enroll() {
+        //         console.log('you are successfully enrolled');
+        //     }
+        // }
+
+        // course.enroll()
+        // console.log(course)
+
+
+
+        //Factory Function  <naming convention>
+        // function createCourse(title){
+        //     return {
+        //         title: title,
+        //         enroll() {
+        //             console.log("You are succesfully enrolled");
+        //         }
+        //     }
+        // }
+
+
+        // Constructor Function
+
+        // function Course(title){
+        //     this.title = title,
+        //     this.enroll = function(){
+        //         console.log('you are successfully enrolled');
+        //     }
+        // }
+        
+        // const course = new Course('Javascript'); // new keyword point to an empty object
+        // console.log(course.constructor)
+        // course.enroll()
+        
+
+        //console.log(course.constructor) -- output -->
+                                            // Course(title){
+                                            //     this.title = title,
+                                            //     this.enroll = function(){
+                                            //         console.log('you are successfully enrolled');
+                                            //     }
+                                            // }
+
+        // delete property delete course.title;
+
+        // Passing Operator
+        // const course = {
+        //     title: 'Javascript',
+        //     enroll() {
+        //         console.log("You are succesfully Enrolled");
+        //     }
+        // }
+
+        // //const course_1  = {...course}
+        // const course_1 = Object.assign({},course)
+        // course_1.title = "C++"; // {title: 'C++', enroll: ƒ}
+        // const course_2 = Object.assign({},course)
+        // course_2.title = "JAVA";
+
+        // memorization:  
+        
+        // fibonacci series 
+
+        // const fib = (n, memo = {}) => {    //  holding the functions n is the key 
+        //     if (n in memo) return memo[n];
+        //     if (n<=2) return 1;
+        //     memo[n] = fib(n-1, memo) + fib(n-2,memo);
+        //     return fib(n - 1) + fib(n-2);  
+        //     return memo[n];
+        // };
+        // console.log(fib(6));  //  printing the value as 8
+        // console.log(fib(9)); 
+        // console.log(fib(10)); 
+
+
+        // Traveller on a 2D Grid . Starting in the top left corner
+        // and the goal is to travel to the bottom Right corner .;
+        // Move down or Right 
+        // Many ways m * n ?   // Similar to backtracking or Maze Problem
+        // recursive strategy
+        const grid = (m , n , memo={}) => {  // n + m is the number of level
+           // are the arguments in the memo
+           const key = m + ',' + n;
+
+           if (key in memo) return memo[key];
+           if ( m === 1 && n === 1) return 1;  // and operator
+           if ( m === 0 || n === 0) return 0;  // or operator
+           
+           memo[key] = grid(m - 1 , n , memo) + grid(m , n-1, memo);
+           return memo[key];
+           //return grid(m-1, n) + grid(m, n-1);
+
+        };
+
+        console.log(grid(1,1)); // printing the numbers of way
+        console.log(grid(2,3)); // printing the numbers of way
+        console.log(grid(3,2));
+        console.log(grid(18,18)); // without making key it will show problem rendering problem solve it by making a contant key
+        // Space complexity -- > equals to the Height of the Tree
+        // Time Complexity -- > O(2*n+m)time recursion
+
+
+        
+        
+
+
+    </script>
+</body>
+</html>
+
+
+
